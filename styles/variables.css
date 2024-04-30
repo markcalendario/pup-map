@@ -1,0 +1,16 @@
+:root {
+  --white: white;
+  --white-0: #f8fafc;
+  --white-1: #f1f5f9;
+  --white-2: #e2e8f0;
+  --white-3: #cbd5e1;
+  --white-4: #94a3b8;
+  --white-5: #64748b;
+  --white-6: #475569;
+  --white-7: #334155;
+  --white-8: #1e293b;
+  --white-9: #0f172a;
+
+  --primary: #800000;
+  --secondary: #daa520;
+}

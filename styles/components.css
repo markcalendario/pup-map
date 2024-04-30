@@ -1,0 +1,72 @@
+/* Modal */
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(63, 0, 0, 0.8);
+}
+
+.modal-background .modal-box {
+  background-color: var(--white-0);
+  position: absolute;
+  width: 90%;
+  max-height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.modal-background .modal-box .close {
+  background-color: transparent;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--primary);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--white-0);
+  cursor: pointer;
+  float: right;
+}
+
+.modal-background .modal-box img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.modal-background .modal-box .location-name {
+  font-weight: 900;
+  font-size: x-large;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.modal-background .modal-box .description {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-background .modal-box {
+    width: 500px;
+  }
+}
+
+/* Area */
+
+area {
+  cursor: pointer;
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/resets.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon" />
+    <title>PUP Vicinity Map Guide</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="wrapper">
+          <img src="./assets/icons/logo.png" alt="PUP" />
+          <h1>PUP Vicinity Map Guide</h1>
+        </div>
+      </div>
+    </nav>
+
+    <section id="kiosk">
+      <div class="map-wrapper">
+        <img id="pup-map" src="./assets/map.jpg" usemap="#image-map" />
+
+        <map name="image-map">
+          <area
+            alt="Interfaith Chapel"
+            title="Interfaith Chapel"
+            coords="1268,1205,165"
+            shape="circle"
+            onclick="showModal('interfaith-chapel')" />
+          <area
+            alt="Gymnasium and Sports Center"
+            title="Gymnasium and Sports Center"
+            coords="1672,60,1966,86,1951,275,1659,249"
+            shape="poly"
+            onclick="showModal('gymnasium')" />
+          <area
+            alt="Visitor Information Center"
+            title="Visitor Information Center"
+            coords="2023,460,2091,537"
+            shape="rect" />
+          <area
+            alt="Ninoy Aquino Library and Learning Resource Center"
+            title="Ninoy Aquino Library and Learning Resource Center"
+            coords="786,73,947,541,1053,509,988,322,1158,264,1121,159,958,221,883,39"
+            shape="poly"
+            onclick="showModal('ninoy-library')" />
+          <area
+            alt="Lagoon"
+            title="Lagoon"
+            coords="1145,363,1115,363,1091,367,1074,380,1063,404,1061,425,1055,447,1055,483,1053,514,1042,533,1018,533,988,535,956,561,943,589,939,638,945,673,917,679,891,692,868,700,874,731,878,743,896,737,924,731,945,731,960,731,986,726,999,720,1016,718,1042,696,1063,679,1091,636,1123,582,1136,537,1160,507,1184,488,1194,460,1194,432,1192,406"
+            shape="poly"
+            onclick="showModal('lagoon')" />
+          <area
+            alt="PUP Obelisk"
+            title="PUP Obelisk"
+            coords="1409,552,48"
+            shape="circle"
+            onclick="showModal('obelisk')" />
+          <area
+            alt="Track and Football Oval"
+            title="Track and Football Oval"
+            coords="2124,729,2168,789,2192,844,2202,906,2197,974,1923,1366,1853,1418,1756,1439,1675,1426,1594,1376,1534,1279,1529,1183,1555,1097,1832,718,1944,679,2051,684"
+            shape="poly"
+            onclick="showModal('oval')" />
+          <area
+            alt="PUP Overhead Water Tank"
+            title="PUP Overhead Water Tank"
+            coords="757,176,35"
+            shape="circle"
+            onclick="showModal('water-tank')" />
+          <area
+            alt="Charlie Del Rosario Hall"
+            title="Charlie Del Rosario Hall"
+            coords="460,408,729,563,677,646,412,495"
+            shape="poly"
+            onclick="showModal('charlie-building')" />
+          <area
+            alt="Student Canteen"
+            title="Student Canteen"
+            coords="559,673,620,714,650,665,582,624"
+            shape="poly" />
+          <area
+            alt="Tahanan ng Alumni"
+            title="Tahanan ng Alumni"
+            coords="1342,102,1330,208,1289,200,1293,94"
+            shape="poly" />
+          <area
+            alt="Pylon"
+            title="Pylon"
+            coords="2188,499,2188,559,2132,559,2135,495"
+            shape="poly"
+            onclick="showModal('pylon')" />
+          <area
+            alt="Outdoor Basketball and Volleyball Court"
+            title="Outdoor Basketball and Volleyball Court"
+            coords="1716,321,1497,310,1485,446,1705,457"
+            shape="poly"
+            onclick="showModal('basketball-court')" />
+          <area
+            alt="Olympic Pool"
+            title="Olympic Pool"
+            coords="1349,45,1338,212,1606,231,1618,64"
+            shape="poly"
+            onclick="showModal('pool')" />
+          <area
+            alt="Tennis Court"
+            title="Tennis Court"
+            coords="1754,314,1739,499,1935,506,1943,329"
+            shape="poly"
+            onclick="showModal('tennis-court')" />
+          <area
+            alt="Flag Pole"
+            title="Flag Pole"
+            coords="1311,801,1330,839,1368,820,1346,779"
+            shape="poly"
+            onclick="showModal('flag-pole')" />
+          <area
+            alt="Freedom Park"
+            title="Freedom Park"
+            coords="1470,661,1417,665,1383,665,1349,658,1232,775,1251,798,1274,794,1315,869,1304,896,1323,922,1342,911,1368,896"
+            shape="poly"
+            onclick="showModal('freedom-park')" />
+          <area
+            alt="Community Building Gabriela Silang"
+            title="Community Building Gabriela Silang"
+            coords="2135,1164,2075,1247,2037,1232,2113,1145"
+            shape="poly" />
+          <area
+            alt="East Wing"
+            title="East Wing"
+            coords="892,1092,892,1376,922,1380,930,1402,1017,1406,1017,1376,1051,1376,1043,1092"
+            shape="poly" />
+          <area
+            alt="North Wing"
+            title="North Wing"
+            coords="986,918,1066,1058,1304,918,1293,881,1319,873,1270,794,1240,809,1225,790"
+            shape="poly"
+            onclick="showModal('north-wing')" />
+          <area
+            alt="West Wing"
+            title="West Wing"
+            coords="941,926,695,782,680,809,661,794,620,869,635,884,620,915,869,1055"
+            shape="poly" />
+          <area
+            alt="University Canteen - Sampaguita Building"
+            title="University Canteen - Sampaguita Building"
+            coords="590,813,635,745,514,677,472,745"
+            shape="poly" />
+          <area
+            alt="Apolinario Mabini Shrine"
+            title="Apolinario Mabini Shrine"
+            coords="1421,820,1516,869,1553,835,1599,767,1633,722,1818,631,1531,624,1512,646,1482,669"
+            shape="poly"
+            onclick="showModal('shrine')" />
+          <area
+            alt="Guard House"
+            title="Guard House"
+            coords="2098,627,2098,658,2132,658,2132,624"
+            shape="poly" />
+          <area
+            alt="Dome"
+            title="Dome"
+            coords="941,922,983,922,1062,1051,1043,1089,888,1092,858,1058"
+            shape="poly" />
+          <area
+            alt="South Wing"
+            title="South Wing"
+            coords="786,1096,854,1062,888,1100,813,1145,888,1278,752,1349,578,1047,711,971"
+            shape="poly" />
+          <area
+            alt="Physical Education Building"
+            title="Physical Education Building"
+            coords="1217,30,1206,344,1274,348,1285,34"
+            shape="poly" />
+          <area
+            alt="Nutrition and Food Science Building"
+            title="Nutrition and Food Science Building"
+            coords="1062,1399,1432,1451"
+            shape="rect" />
+          <area
+            alt="Campus Development and Maintenance Building"
+            title="Campus Development and Maintenance Building"
+            coords="835,1429,964,1451"
+            shape="rect" />
+          <area
+            alt="Amphitheather"
+            title="Amphitheather"
+            coords="1028,809,1002,824,975,824,949,824,930,813,911,798,896,771,892,748,941,737,983,733"
+            shape="poly"
+            onclick="showModal('amphitheather')" />
+          <area
+            alt="Grandstand"
+            title="Grandstand"
+            coords="1618,858,1576,937,1595,953,1606,971,1652,926,1686,881,1720,813,1678,798"
+            shape="poly"
+            onclick="showModal('grandstand')" />
+          <area
+            alt="Main Gate"
+            title="Main Gate"
+            coords="2105,563,2109,609,2219,616,2219,559"
+            shape="poly"
+            onclick="showModal('gate')" />
+          <area
+            alt="Mural Sculture"
+            title="Mural Sculture"
+            coords="2219,616,2135,616,2143,635,2215,639"
+            shape="poly"
+            onclick="showModal('mural')" />
+          <area
+            alt="Property Building"
+            title="Property Building"
+            coords="204,0,204,38,249,38,246,64,317,68,310,38,348,45,348,4"
+            shape="poly" />
+          <area
+            alt="Printing Press Building"
+            title="Printing Press Building"
+            coords="204,117,253,193,291,178,234,94"
+            shape="poly" />
+          <area
+            alt="Water Pump Facility"
+            title="Water Pump Facility"
+            coords="767,4,767,53,703,53,711,30,745,26,745,4"
+            shape="poly" />
+          <area
+            alt="Underground Water Tank"
+            title="Underground Water Tank"
+            coords="718,68,745,57,756,79,722,94"
+            shape="poly" />
+          <area
+            alt="PUP Ferry Station"
+            title="PUP Ferry Station"
+            coords="707,1425,680,1353,635,1376,669,1440"
+            shape="poly"
+            onclick="showModal('ferry')" />
+          <area
+            alt="Laboratory High School"
+            title="Laboratory High School"
+            coords="363,325,707,526,730,492,386,287"
+            shape="poly"
+            onclick="showModal('laboratory-highschool')" />
+          <area
+            alt="Laboratory High School"
+            title="Laboratory High School"
+            coords="351,206,669,391,692,353,370,164"
+            shape="poly"
+            onclick="showModal('laboratory-highschool')" />
+          <area
+            alt="Laboratory High School"
+            title="Laboratory High School"
+            coords="389,136,612,268,631,227,412,102"
+            shape="poly"
+            onclick="showModal('laboratory-highschool')" />
+          <area
+            alt="Laboratory High School"
+            title="Laboratory High School"
+            coords="427,79,620,185,643,147,450,38"
+            shape="poly"
+            onclick="showModal('laboratory-highschool')" />
+          <area
+            alt="Covered Walkway"
+            title="Covered Walkway"
+            coords="1954,488,1962,333,1980,336,1973,488"
+            shape="poly" />
+          <area
+            alt="Covered Walkway"
+            title="Covered Walkway"
+            coords="2071,624,1935,620,1928,597,2067,601"
+            shape="poly" />
+          <area
+            alt="Generator Facility"
+            title="Generator Facility"
+            coords="639,1315,650,1342,669,1338,658,1304"
+            shape="poly" />
+          <area
+            alt="Linear Park"
+            title="Linear Park"
+            coords="265,261,495,983,620,1323,692,1289,639,1202,514,960,280,253"
+            shape="poly"
+            onclick="showModal('linear-park')" />
+        </map>
+      </div>
+    </section>
+
+    <!-- <div id="modal" class="modal-background">
+      <div class="modal-box">
+        <button id="modal-close" class="close">&times;</button>
+        <img src="./assets/icons/logo.png" alt="preview" />
+        <p class="location-name">Lorem ipsum dolor sit amet.</p>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          quibusdam, odit magnam, mollitia iure doloribus nemo nihil sint
+          voluptas aperiam quaerat vel tempora aliquam perspiciatis quasi
+          voluptatum eos consectetur atque!
+        </p>
+      </div>
+    </div> -->
+  </body>
+</html>
+
+<script src="./scripts.js"></script>
