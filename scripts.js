@@ -10,7 +10,14 @@ const locations = {
     title: "North Wing",
     imageName: "north-wing.jpg",
     description:
-      "One of the wing of North, East, West, and South Wing Building of the Polytechnic University of the Philippines."
+      "North wing building of the Polytechnic University of the Philippines main building."
+  },
+
+  "west-wing": {
+    title: "West Wing",
+    imageName: "west-wing.jpg",
+    description:
+      "West wing building of Polytechnic University of the Philippines main building."
   },
 
   pool: {
@@ -157,6 +164,54 @@ const locations = {
     imageName: "gate.jpg",
     description:
       "The entrance gate of the Polytechnic University of the Philippines."
+  },
+
+  "visitor-information-center": {
+    title: "Visitor Information Center",
+    imageName: "visitor-information-center.jpg",
+    description:
+      "An office that supplies information to people who are visiting an area for advice on things to see, accommodation, etc."
+  },
+
+  "guard-house": {
+    title: "Guard House",
+    imageName: "guard-house.jpg",
+    description:
+      "A building accommodating a guard who controls entrance to the grounds of the Polytechnic University of the Philippines."
+  },
+
+  "gym-covered-walkway": {
+    title: "Covered Walkway to Gym",
+    imageName: "gym-covered-walkway.jpg",
+    description:
+      "A roofed walkway for the peoople going to Gym. They can help create a safer and clear access routes and promoting people flow."
+  },
+
+  "exit-covered-walkway": {
+    title: "Exit Covered Walkway",
+    imageName: "exit-covered-walkway.jpg",
+    description:
+      "A roofed walkway for the peoople going out from the university. They can help create a safer and clear access routes and promoting people flow."
+  },
+
+  "souvenir-shop": {
+    title: "Souvenir Shop",
+    imageName: "souvenir-shop.jpg",
+    description:
+      "A PUP souvenir shop is a store that sells items or merchandise of the university."
+  },
+
+  "printing-press": {
+    title: "Printing Press Building",
+    imageName: "printing-press.jpg",
+    description:
+      "A PUP printing press building is a facility specifically designed for housing printing presses and associated equipment used in the printing industry, particularly journalistic publications."
+  },
+
+  "tahanan-ng-alumni": {
+    title: "Tahanan ng Alumni",
+    imageName: "tahanan-ng-alumni.jpg",
+    description: `"Tahanan Ng Alumni" is the university's alumni center, where former students gather for events and networking, celebrating their alma mater's legacy.`
   }
 };
 
@@ -199,3 +254,27 @@ function showModal(location) {
 
   document.getElementsByTagName("body")[0].appendChild(modalBackground);
 }
+
+let hideTimeout;
+
+function handleNavGuideMouseMove() {
+  console.log("e");
+  const navGuide = document.getElementById("navigation-guide");
+
+  navGuide.style.visibility = "hidden";
+  navGuide.style.opacity = "0";
+
+  clearTimeout(hideTimeout);
+
+  hideTimeout = setTimeout(() => {
+    const modal = document.getElementById("modal");
+    if (modal) return;
+
+    navGuide.style.visibility = "unset";
+    navGuide.style.opacity = "1";
+  }, 5000);
+}
+
+window.addEventListener("mousemove", handleNavGuideMouseMove);
+window.addEventListener("touchstart", handleNavGuideMouseMove);
+window.addEventListener("touchmove", handleNavGuideMouseMove);

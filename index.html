@@ -12,14 +12,14 @@
       rel="shortcut icon"
       href="./assets/icons/favicon.ico"
       type="image/x-icon" />
-    <title>PUP Vicinity Map Guide</title>
+    <title>PUP Map Guide</title>
   </head>
   <body>
     <nav>
       <div class="container">
         <div class="wrapper">
           <img src="./assets/icons/logo.png" alt="PUP" />
-          <h1>PUP Vicinity Map Guide</h1>
+          <h1>PUP Map Guide</h1>
         </div>
       </div>
     </nav>
@@ -27,6 +27,13 @@
     <section id="kiosk">
       <div class="map-wrapper">
         <img id="pup-map" src="./assets/map.jpg" usemap="#image-map" />
+
+        <div id="navigation-guide">
+          <div class="wrapper">
+            <img src="./assets/icons/navigation-arrows.png" alt="arrows" />
+            <p>Interact to navigate.</p>
+          </div>
+        </div>
 
         <map name="image-map">
           <area
@@ -45,7 +52,8 @@
             alt="Visitor Information Center"
             title="Visitor Information Center"
             coords="2023,460,2091,537"
-            shape="rect" />
+            shape="rect"
+            onclick="showModal('visitor-information-center')" />
           <area
             alt="Ninoy Aquino Library and Learning Resource Center"
             title="Ninoy Aquino Library and Learning Resource Center"
@@ -91,7 +99,14 @@
             alt="Tahanan ng Alumni"
             title="Tahanan ng Alumni"
             coords="1342,102,1330,208,1289,200,1293,94"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('tahanan-ng-alumni')" />
+          <area
+            alt="Souvenir Shop"
+            title="Souvenir Shop"
+            coords="1639,630,1683,653"
+            shape="rect"
+            onclick="showModal('souvenir-shop')" />
           <area
             alt="Pylon"
             title="Pylon"
@@ -148,7 +163,8 @@
             alt="West Wing"
             title="West Wing"
             coords="941,926,695,782,680,809,661,794,620,869,635,884,620,915,869,1055"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('west-wing')" />
           <area
             alt="University Canteen - Sampaguita Building"
             title="University Canteen - Sampaguita Building"
@@ -164,7 +180,8 @@
             alt="Guard House"
             title="Guard House"
             coords="2098,627,2098,658,2132,658,2132,624"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('guard-house')" />
           <area
             alt="Dome"
             title="Dome"
@@ -223,7 +240,8 @@
             alt="Printing Press Building"
             title="Printing Press Building"
             coords="204,117,253,193,291,178,234,94"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('printing-press')" />
           <area
             alt="Water Pump Facility"
             title="Water Pump Facility"
@@ -265,15 +283,17 @@
             shape="poly"
             onclick="showModal('laboratory-highschool')" />
           <area
-            alt="Covered Walkway"
+            alt="Covered Walkway to Gym"
             title="Covered Walkway"
             coords="1954,488,1962,333,1980,336,1973,488"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('gym-covered-walkway')" />
           <area
             alt="Covered Walkway"
             title="Covered Walkway"
             coords="2071,624,1935,620,1928,597,2067,601"
-            shape="poly" />
+            shape="poly"
+            onclick="showModal('exit-covered-walkway')" />
           <area
             alt="Generator Facility"
             title="Generator Facility"
