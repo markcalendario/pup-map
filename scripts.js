@@ -20,6 +20,48 @@ const locations = {
       "West wing building of Polytechnic University of the Philippines main building."
   },
 
+  "east-wing": {
+    title: "East Wing",
+    imageName: "east-wing.jpg",
+    description:
+      "East wing building of Polytechnic University of the Philippines main building."
+  },
+
+  "south-wing": {
+    title: "South Wing",
+    imageName: "placeholder.jpg",
+    description:
+      "South wing building of Polytechnic University of the Philippines main building."
+  },
+
+  "student-canteen": {
+    title: "Student Canteen",
+    imageName: "placeholder.jpg",
+    description:
+      "The university's Student Canteen is a lively spot offering diverse food options for students to refuel and socialize."
+  },
+
+  "generator-facility": {
+    title: "Generator Facility",
+    imageName: "placeholder.jpg",
+    description:
+      "A generator facility at the university ensures uninterrupted power supply, serving as a backup during outages to support continuous operations and activities on campus."
+  },
+
+  "maintenance-building": {
+    title: "Maintenance Building",
+    imageName: "placeholder.jpg",
+    description:
+      "The Campus Development and Maintenance Building is the heartbeat of our university's infrastructure. It's where meticulous planning meets skilled craftsmanship to shape the campus environment. From designing new facilities to maintaining existing ones, this building houses the experts who ensure our campus remains a vibrant and functional space for learning and growth."
+  },
+
+  "nutrition-building": {
+    title: "Nutrition Building",
+    imageName: "placeholder.jpg",
+    description:
+      "The Nutrition and Food Science Building is a modern facility for research and education in nutrition, food science, and dietetics."
+  },
+
   pool: {
     title: "Olympic Pool",
     imageName: "pool.jpg",
@@ -74,6 +116,40 @@ const locations = {
     imageName: "laboratory-highschool.jpg",
     description:
       "The PUP Laboratory High School (PUP LHS) was established in 1954 during the Philippine College of Commerce era. The PUP LHS curricular program focuses on Discipline, Academic Excellence, Nationalism and Commerce. It is one of the top performing high schools in the country producing top caliber students who later become prominent in their chosen field of specialization."
+  },
+
+  "community-building": {
+    title: "Water Pump and Tank",
+    imageName: "placeholder.jpg",
+    description:
+      "The water pump and tank facility ensures a steady and reliable water supply across campus. It comprises pumps that draw water from a source and store it in tanks, providing a backup during water shortages or emergencies. This vital infrastructure ensures uninterrupted access to clean water for drinking, sanitation, and various campus activities."
+  },
+
+  "property-building": {
+    title: "Property Building",
+    imageName: "placeholder.jpg",
+    description:
+      "The Property Building serves as the administrative center for managing the university's real estate assets. It handles tasks such as property acquisition, maintenance, and leasing. Additionally, it oversees property-related legal matters and ensures compliance with regulations."
+  },
+
+  dome: {
+    title: "Dome",
+    imageName: "dome.jpg",
+    description: "A center of the main building of the campus."
+  },
+
+  "water-pump": {
+    title: "Community Building (Gabriela Silang)",
+    imageName: "placeholder.jpg",
+    description:
+      "The Gabriela Silang Building is the heart of our community, fostering connections and collaboration among students, faculty, and staff. With its versatile spaces for meetings, events, and social gatherings, it serves as a vibrant hub where ideas are exchanged, friendships are formed, and initiatives for positive change are nurtured."
+  },
+
+  "pe-building": {
+    title: "Physical Education Building",
+    imageName: "placeholder.jpg",
+    description:
+      "The Physical Education Building is where students engage in fitness activities, sports, and wellness programs. It's equipped with gyms, courts, and classrooms dedicated to promoting health and physical well-being among students and faculty."
   },
 
   "charlie-building": {
