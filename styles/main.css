@@ -17,7 +17,6 @@ nav .container .wrapper img {
 nav .container .wrapper h1 {
   color: var(--white-0);
   font-weight: 900;
-  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {

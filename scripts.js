@@ -6,6 +6,13 @@ const locations = {
       "The Interfaith Chapel is a sacred space designed to provide a welcoming environment for people of all faiths and beliefs to come together for prayer, reflection, and meditation, fostering spiritual growth, understanding, and respect for diversity."
   },
 
+  "pasig-river": {
+    title: "Pasig River",
+    imageName: "pasig-river.jpg",
+    description:
+      "The Pasig River is a water body in the Philippines that connects Laguna de Bay to Manila Bay."
+  },
+
   "north-wing": {
     title: "North Wing",
     imageName: "north-wing.jpg",
